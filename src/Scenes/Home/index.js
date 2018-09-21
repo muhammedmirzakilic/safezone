@@ -11,6 +11,9 @@ class Container extends Component {
   onPressButton = () => {
     this.props.dispatch(navigate("Auth"));
   };
+  navigateToChooseAvatar = () => {
+    this.props.dispatch(navigate("ChooseAvatar"));
+  };
   render() {
     return (
       <View
@@ -21,6 +24,11 @@ class Container extends Component {
           backgroundColor: "red"
         }}
       >
+        <Button
+          raised
+          title="Avatarini sec"
+          onPress={this.navigateToChooseAvatar}
+        />
         <Text style={{ color: "white" }}>Home Index</Text>
         <Button
           raised
