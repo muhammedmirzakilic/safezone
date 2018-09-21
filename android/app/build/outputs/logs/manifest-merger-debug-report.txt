@@ -1,0 +1,254 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-27:12
+MERGED from [:react-native-vector-icons] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.kontaktio:sdk:4.0.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/sdk-4.0.1.aar/4ded875c1b2d2b69d4183875432bff1f/AndroidManifest.xml:2:1-11:12
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:2:1-42:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/5e561948e2e31ff3e59d8a85b7115ef9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/9c06fc092deb0eed7b06e5c18ec39e43/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/47deb4188bdb76c3bf8887bee0c20576/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/303e8c20a6cb70c0cd0926b58f468880/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/fea8e5c829c34e3e9f8b55d7dbf7f949/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/70b9d3badf28f0c3a9abb9f74ce0c689/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa75d1ecb0babe2952ed5ce3ce2ab8c2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f65a9d58600a7b5c5f598437c23a6e6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9ed62bb23243159832e2416ca16d70d7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0f5383049a852936022c174de5db5fd8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9fc7a4136e7dc505a37ca0fe854942cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/fbc959ffdb6b5480ee5031316d94d9fa/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/28f935e02800915ef55b7080ba4c70dc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/62b5715cd74c3658dcdcbfa4c25898ae/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/7078cfd8d950067f0a99817a04df9d1d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/8b9d20a33ddf9992d0f5d1f163c18060/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/587921e99c76d4458ab824579d9f22cc/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/274fac1545cbc9a8e4c4e37abe8bca17/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+	package
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:2:5-27
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-67
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:8:5-78
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:5-79
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:8:22-76
+application
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:11:5-30:19
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:13:5-20
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:21:5-40:19
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:21:5-40:19
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/8b9d20a33ddf9992d0f5d1f163c18060/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/8b9d20a33ddf9992d0f5d1f163c18060/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/587921e99c76d4458ab824579d9f22cc/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/587921e99c76d4458ab824579d9f22cc/AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:13:7-39
+	android:icon
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:14:7-41
+	android:allowBackup
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:15:7-34
+	android:theme
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:16:7-38
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:12:7-38
+activity#com.safezone.MainActivity
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:17:7-26:18
+	android:label
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:19:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:21:9-51
+	android:configChanges
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:20:9-79
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:18:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:22:9-25:25
+action#android.intent.action.MAIN
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:23:13-65
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:23:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:24:13-73
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:24:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:27:7-84
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:27:17-81
+service#com.kontakt.sdk.android.ble.service.ProximityService
+ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:28:9-112
+	android:exported
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:28:86-110
+	android:name
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:28:18-85
+uses-sdk
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-14:41
+MERGED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-14:41
+MERGED from [:react-native-vector-icons] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/8554d71584b99ffe189bef8bdd74cc75/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/AndroidManifest.xml:20:5-44
+MERGED from [com.kontaktio:sdk:4.0.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/sdk-4.0.1.aar/4ded875c1b2d2b69d4183875432bff1f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kontaktio:sdk:4.0.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/sdk-4.0.1.aar/4ded875c1b2d2b69d4183875432bff1f/AndroidManifest.xml:7:5-9:41
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:7:5-9:41
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/5e561948e2e31ff3e59d8a85b7115ef9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/5e561948e2e31ff3e59d8a85b7115ef9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/9c06fc092deb0eed7b06e5c18ec39e43/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/9c06fc092deb0eed7b06e5c18ec39e43/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/47deb4188bdb76c3bf8887bee0c20576/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/47deb4188bdb76c3bf8887bee0c20576/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/303e8c20a6cb70c0cd0926b58f468880/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/303e8c20a6cb70c0cd0926b58f468880/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/fea8e5c829c34e3e9f8b55d7dbf7f949/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/fea8e5c829c34e3e9f8b55d7dbf7f949/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/70b9d3badf28f0c3a9abb9f74ce0c689/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/70b9d3badf28f0c3a9abb9f74ce0c689/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa75d1ecb0babe2952ed5ce3ce2ab8c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa75d1ecb0babe2952ed5ce3ce2ab8c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f65a9d58600a7b5c5f598437c23a6e6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f65a9d58600a7b5c5f598437c23a6e6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9ed62bb23243159832e2416ca16d70d7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9ed62bb23243159832e2416ca16d70d7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0f5383049a852936022c174de5db5fd8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0f5383049a852936022c174de5db5fd8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9fc7a4136e7dc505a37ca0fe854942cf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9fc7a4136e7dc505a37ca0fe854942cf/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/fbc959ffdb6b5480ee5031316d94d9fa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/fbc959ffdb6b5480ee5031316d94d9fa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/28f935e02800915ef55b7080ba4c70dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/28f935e02800915ef55b7080ba4c70dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/62b5715cd74c3658dcdcbfa4c25898ae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/62b5715cd74c3658dcdcbfa4c25898ae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/7078cfd8d950067f0a99817a04df9d1d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/7078cfd8d950067f0a99817a04df9d1d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/8b9d20a33ddf9992d0f5d1f163c18060/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/8b9d20a33ddf9992d0f5d1f163c18060/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/274fac1545cbc9a8e4c4e37abe8bca17/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/274fac1545cbc9a8e4c4e37abe8bca17/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-68
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-68
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-68
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:11:5-13:36
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:5-74
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-74
+MERGED from [:react-native-beacons-manager] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-beacons-manager/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-74
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:14:5-16:36
+MERGED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from [:react-native-kontaktio] /Users/muhammedmirzakilic/Desktop/safezone/node_modules/react-native-kontaktio/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:22-78
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:17:22-78
+uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:19:5-88
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:19:29-85
+receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:22:9-28:20
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:22:19-87
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:23:13-27:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:24:17-79
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:24:25-76
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:25:17-87
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:25:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:26:17-90
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:26:25-87
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:30:9-35:38
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:32:13-35
+	android:label
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:33:13-37
+	android:isolatedProcess
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:34:13-44
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:31:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:36:9-39:40
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:38:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.9.2] /Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/android-beacon-library-2.9.2.aar/9890ca2fcab08e6f1a7b9e55662e550d/AndroidManifest.xml:37:13-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/muhammedmirzakilic/Desktop/safezone/android/app/src/main/AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

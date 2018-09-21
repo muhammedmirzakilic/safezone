@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./App",
+    "paths": {
+      "Scenes*": ["./src/Scenes/*"],
+    }
+  },
+  "exclude": ["node_modules"]
+}

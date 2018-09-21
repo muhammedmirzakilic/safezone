@@ -1,0 +1,45 @@
+{
+  "name": "safezone",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "clean": "watchman watch-del-all && npm cache clean && cd android && gradlew clean && cd ..",
+    "start-bundler": "react-native start --reset-cache"
+  },
+  "dependencies": {
+    "babel-preset-react-native": "^5.0.2",
+    "immutable": "^3.8.2",
+    "react": "16.5.0",
+    "react-native": "0.57.0",
+    "react-native-beacons-manager": "^1.0.7",
+    "react-native-elements": "^0.19.1",
+    "react-native-kontaktio": "^2.1.0",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "1.0.3",
+    "react-navigation-redux-helpers": "^1.0.6",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-immutable": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.45.3",
+    "react-test-renderer": "16.5.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-preset-react-native@5": "4.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "eslint": "^4.19.1",
+    "redux-devtools-extension": "^2.13.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
