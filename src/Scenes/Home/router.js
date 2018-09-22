@@ -6,9 +6,6 @@ import TourScreen from "./Tour";
 
 export const HomeNavigator = StackNavigator(
   {
-    Tour: {
-      screen: TourScreen
-    },
     HomeBase: {
       screen: HomeBase
     },
@@ -17,10 +14,13 @@ export const HomeNavigator = StackNavigator(
     },
     Intro: {
       screen: IntroScreen
+    },
+    Tour: {
+      screen: TourScreen
     }
   },
   {
-    initialRouteName: "Tour",
+    initialRouteName: "HomeBase",
     headerMode: "none"
   }
 );
