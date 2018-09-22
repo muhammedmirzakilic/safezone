@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
+import { connect as reduxConnect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { View, Text, Image } from "react-native";
-import { Button } from "react-native-elements";
-import Cups from "./cups";
+import { View, Text, Image, DeviceEventEmitter } from "react-native";
 import { Model } from "./model";
 import Images from "../../../Assets/Images";
+import Kontakt from "react-native-kontaktio";
+const { connect, startScanning } = Kontakt;
 
 class Container extends Component {
   constructor(props) {
@@ -13,28 +13,54 @@ class Container extends Component {
     this.state = new Model(props);
   }
   componentDidMount() {
-    setTimeout(() => {
-      var { cups } = this.state;
-      cups[0].isActive = true;
-      this.setState({ cups });
-    }, 3000);
-    setTimeout(() => {
-      var { cups } = this.state;
-      cups[1].isActive = true;
-      this.setState({ cups });
-    }, 7000);
-    setTimeout(() => {
-      var { cups } = this.state;
-      cups[2].isActive = true;
-      this.setState({ cups });
-    }, 10000);
+    connect()
+      .then(() => startScanning())
+      .catch(error => console.log("error", error));
+
+    DeviceEventEmitter.addListener(
+      "beaconsDidUpdate",
+      ({ beacons, region }) => {
+        var inArea = false;
+        console.log("beaconsDidUpdate", beacons, region);
+        beacons.map(beacon => {
+          var { uuids, proximities, lastProximityIndex } = this.state;
+          if (beacon.uuid == this.state.uuids[this.state.level].toLowerCase()) {
+            inArea = true;
+            var pIndex = 4;
+            proximities.map((element, index) => {
+              if (beacon.proximity == element) {
+                pIndex = index;
+              }
+            });
+            if (pIndex == 0) {
+              var { level, cups } = this.state;
+              lastProximityIndex = 3;
+              cups[level].isActive = true;
+              level++;
+              this.setState({ lastProximityIndex, cups, level });
+              if (level == 2) {
+                DeviceEventEmitter.removeListener("beaconsDidUpdate");
+                alert("Tebrikler. Basariyla tamamladin");
+              }
+            } else if (pIndex < lastProximityIndex) {
+              lastProximityIndex = pIndex;
+              this.setState({ lastProximityIndex });
+            }
+          }
+          if (inArea) {
+            return;
+          }
+        });
+      }
+    );
   }
 
   renderCups = () => {
     var images = [];
-    this.state.cups.map(element => {
+    this.state.cups.map((element, index) => {
       images.push(
         <Image
+          key={index + ""}
           style={styles.cupStyle}
           source={Images[element.name + (element.isActive ? "" : "Passive")]}
         />
@@ -47,10 +73,15 @@ class Container extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Image source={Images[this.state.avatar]} style={styles.avatar} />
+          <Image
+            source={Images[this.state.avatars[this.state.level]]}
+            style={styles.avatar}
+          />
         </View>
         <View style={styles.content}>
-          <Text>{this.state.stateText}</Text>
+          <Text>
+            {this.state.proximityTexts[this.state.lastProximityIndex]}
+          </Text>
         </View>
         {this.renderCups()}
       </View>
@@ -104,7 +135,4 @@ function mapDispatchToProps(dispatch) {
   return { ...bindActionCreators({}, dispatch), dispatch };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Container);
+export default reduxConnect(mapStateToProps, mapDispatchToProps)(Container);
