@@ -9,7 +9,8 @@ const images = {
   batman: require("./batman.jpeg"),
   vecihi: require("./vecihi.jpeg"),
   firstboy: require("./boyfirst.png"),
-  secondboy: require("./boysecond.png")
+  secondboy: require("./boysecond.png"),
+  trophy: require("./trophy.png")
 };
 
 export default images;
