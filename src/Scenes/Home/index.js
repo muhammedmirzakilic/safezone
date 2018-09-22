@@ -41,7 +41,7 @@ class Container extends Component {
       style={styles.submit}
       onPress={this.navigateToChooseAvatar}
       underlayColor='#fff'>
-      <Text style={[styles.submitText]}>Oyuna Başla</Text>
+      <Text style={[styles.submitText]}>Yolculuğa Başla</Text>
       </TouchableHighlight>
       </View>
 

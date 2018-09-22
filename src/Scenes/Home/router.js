@@ -3,6 +3,7 @@ import HomeBase from "./index";
 import ChooseAvatarScreen from "./ChooseAvatar";
 import IntroScreen from "./Intro";
 import TourScreen from "./Tour";
+import FinalScreen from "./Final";
 
 export const HomeNavigator = StackNavigator(
   {
@@ -17,6 +18,9 @@ export const HomeNavigator = StackNavigator(
     },
     Tour: {
       screen: TourScreen
+    },
+    Final:{
+      screen: FinalScreen
     }
   },
   {

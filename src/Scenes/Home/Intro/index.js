@@ -11,8 +11,8 @@ class Container extends Component {
     super(props);
     this.state = {
       firstPageIntro: "Merhaba, Ben Kemal.Benimle eğlence dolu bir yolculuğa hoşgeldin"+"😊",
-      secondPageIntro: "sayfa 22222",
-      thirdPageIntro: "sayfa 333333",
+      secondPageIntro: "Yolculuk sırasında ödülleri toplayabilmek için gözün yukarılarda olsun🙄 Ekrandaki süperkahramanı gördüğün yere doğru ilerle🤓 Aşağıdaki ödülleri topla🎉",
+      thirdPageIntro: "Büyük ödüle ulaştığında uçağa binerken ödülün seni bekliyor olacak.Bol şans💪",
       trophy: ["tall","grande","venti"]
     };
   }
@@ -47,8 +47,8 @@ class Container extends Component {
             </View>
         </View>
         <View style={styles.slider2}>
-            <View style={styles.content}>
-              <Text>{this.state.secondPageIntro}</Text>
+            <View style={{marginTop:150}}>
+              <Text style={styles.submitText}>{this.state.secondPageIntro}</Text>
             </View>
             {this.renderCups()}
         </View>
@@ -57,14 +57,14 @@ class Container extends Component {
               <Image source={Images["trophy"]} style={styles.avatar} />
             </View>
             <View style={styles.content}>
-              <Text>{this.state.thirdPageIntro}</Text>
+              <Text style={styles.submitText}>{this.state.thirdPageIntro}</Text>
             </View>
             <View style={{justifyContent: 'flex-end'}}>
             <TouchableHighlight
             style={styles.submit}
             onPress={this.startTour}
             underlayColor='#fff'>
-            <Text style={[styles.submitText]}>Ödüller Seni Bekliyor</Text>
+            <Text style={[styles.submitText]}>Oyuna Başla</Text>
             </TouchableHighlight>
             </View>
         </View>
@@ -102,7 +102,8 @@ const styles = {
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
-    backgroundColor: "#221b4b"
+    backgroundColor: "#221b4b",
+    marginTop:40
   },
   header: {
     flex: 0.3,
