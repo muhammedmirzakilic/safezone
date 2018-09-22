@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/muhammedmirzakilic/Desktop/safezone/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Users\\ethem\\Desktop\\Git\\safezone\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/res/values-night-v8/values-night-v8.xml",
+                    "source": "C:\\Users\\ethem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\38be214fbdeaf3eac96522cbbb560f33\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

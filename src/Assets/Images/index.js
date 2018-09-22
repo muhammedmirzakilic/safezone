@@ -11,7 +11,8 @@ const images = {
   firstboy: require("./boyfirst.png"),
   secondboy: require("./boysecond.png"),
   trophy: require("./trophy.png"),
-  giff: require("./45.gif")
+  giff: require("./45.gif"),
+  splash: require("./splash.png")
 };
 
 export default images;
