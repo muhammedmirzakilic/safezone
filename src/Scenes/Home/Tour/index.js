@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect as reduxConnect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { View, Text, Image, DeviceEventEmitter } from "react-native";
+import { View, Text, Image, DeviceEventEmitter, Platform } from "react-native";
 import { Model } from "./model";
 import Images from "../../../Assets/Images";
 import Kontakt from "react-native-kontaktio";
@@ -13,46 +13,50 @@ class Container extends Component {
     this.state = new Model(props);
   }
   componentDidMount() {
-    connect()
-      .then(() => startScanning())
-      .catch(error => console.log("error", error));
+    if (Platform.OS != "ios") {
+      connect()
+        .then(() => startScanning())
+        .catch(error => console.log("error", error));
 
-    DeviceEventEmitter.addListener(
-      "beaconsDidUpdate",
-      ({ beacons, region }) => {
-        var inArea = false;
-        console.log("beaconsDidUpdate", beacons, region);
-        beacons.map(beacon => {
-          var { uuids, proximities, lastProximityIndex } = this.state;
-          if (beacon.uuid == this.state.uuids[this.state.level].toLowerCase()) {
-            inArea = true;
-            var pIndex = 4;
-            proximities.map((element, index) => {
-              if (beacon.proximity == element) {
-                pIndex = index;
+      DeviceEventEmitter.addListener(
+        "beaconsDidUpdate",
+        ({ beacons, region }) => {
+          var inArea = false;
+          console.log("beaconsDidUpdate", beacons, region);
+          beacons.map(beacon => {
+            var { uuids, proximities, lastProximityIndex } = this.state;
+            if (
+              beacon.uuid == this.state.uuids[this.state.level].toLowerCase()
+            ) {
+              inArea = true;
+              var pIndex = 4;
+              proximities.map((element, index) => {
+                if (beacon.proximity == element) {
+                  pIndex = index;
+                }
+              });
+              if (pIndex == 0) {
+                var { level, cups } = this.state;
+                lastProximityIndex = 3;
+                cups[level].isActive = true;
+                level++;
+                this.setState({ lastProximityIndex, cups, level });
+                if (level == 2) {
+                  DeviceEventEmitter.removeListener("beaconsDidUpdate");
+                  alert("Tebrikler. Basariyla tamamladin");
+                }
+              } else if (pIndex < lastProximityIndex) {
+                lastProximityIndex = pIndex;
+                this.setState({ lastProximityIndex });
               }
-            });
-            if (pIndex == 0) {
-              var { level, cups } = this.state;
-              lastProximityIndex = 3;
-              cups[level].isActive = true;
-              level++;
-              this.setState({ lastProximityIndex, cups, level });
-              if (level == 2) {
-                DeviceEventEmitter.removeListener("beaconsDidUpdate");
-                alert("Tebrikler. Basariyla tamamladin");
-              }
-            } else if (pIndex < lastProximityIndex) {
-              lastProximityIndex = pIndex;
-              this.setState({ lastProximityIndex });
             }
-          }
-          if (inArea) {
-            return;
-          }
-        });
-      }
-    );
+            if (inArea) {
+              return;
+            }
+          });
+        }
+      );
+    }
   }
 
   renderCups = () => {
