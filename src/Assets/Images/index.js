@@ -7,7 +7,9 @@ const images = {
   tallPassive: require("./tall-gray.png"),
   superman: require("./superman.jpeg"),
   batman: require("./batman.jpeg"),
-  vecihi: require("./vecihi.jpeg")
+  vecihi: require("./vecihi.jpeg"),
+  firstboy: require("./boyfirst.png"),
+  secondboy: require("./boysecond.png")
 };
 
 export default images;
