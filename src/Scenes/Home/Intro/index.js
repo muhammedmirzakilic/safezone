@@ -1,17 +1,35 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { View, Text } from "react-native";
+import { View, Text,TouchableHighlight,Image } from "react-native";
 import { Button } from "react-native-elements";
 import Swiper from "react-native-swiper";
+import Images from "../../../Assets/Images";
 
 class Container extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Intro sayfasi"
+      firstPageIntro: "Merhaba, Ben Kemal.Benimle eğlence dolu bir yolculuğa hoşgeldin"+"😊",
+      secondPageIntro: "sayfa 22222",
+      thirdPageIntro: "sayfa 333333",
+      trophy: ["tall","grande","venti"]
     };
   }
+
+  renderCups = () => {
+    var images = [];
+    this.state.trophy.map((element,index) => {
+      images.push(
+        <Image
+          key={index+""}
+          style={styles.cupStyle}
+          source={Images[element]}
+        />
+      );
+    });
+    return <View style={styles.cupWrapper}>{images}</View>;
+  };
 
   startTour = () => {
     this.props.dispatch(navigate("Tour"));
@@ -19,21 +37,36 @@ class Container extends Component {
 
   render() {
     return (
-      <Swiper>
+      <Swiper loop={false} dotColor={"#fff"} activeDotColor={"#3fc9b0"}>
         <View style={styles.slider1}>
-          <Text>Nabiyon gardas</Text>
+            <View style={styles.header}>
+              <Image source={Images["firstboy"]} style={styles.avatar} />
+            </View>
+            <View style={styles.content}>
+              <Text style={styles.submitText}>{this.state.firstPageIntro}</Text>
+            </View>
         </View>
         <View style={styles.slider2}>
-          <Text>Iyidir sen nabiyon gardas</Text>
+            <View style={styles.content}>
+              <Text>{this.state.secondPageIntro}</Text>
+            </View>
+            {this.renderCups()}
         </View>
         <View style={styles.slider3}>
-          <Text>Ayni bizden de iste.. nolsun</Text>
-          <Button
-            large
-            rightIcon={{ name: "code" }}
-            title="Hade oyuna baslayam o vakit"
+            <View style={styles.header}>
+              <Image source={Images["trophy"]} style={styles.avatar} />
+            </View>
+            <View style={styles.content}>
+              <Text>{this.state.thirdPageIntro}</Text>
+            </View>
+            <View style={{justifyContent: 'flex-end'}}>
+            <TouchableHighlight
+            style={styles.submit}
             onPress={this.startTour}
-          />
+            underlayColor='#fff'>
+            <Text style={[styles.submitText]}>Ödüller Seni Bekliyor</Text>
+            </TouchableHighlight>
+            </View>
         </View>
       </Swiper>
     );
@@ -52,20 +85,63 @@ const styles = {
   wrapper: {},
   slider1: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    flexDirection: "column",
+    justifyContent: "space-between",
+    marginTop:40,
+    backgroundColor: "#221b4b"
   },
 
   slider2: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    flexDirection: "column",
+    justifyContent: "space-between",
+    backgroundColor: "#221b4b"
   },
 
   slider3: {
     flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
+    backgroundColor: "#221b4b"
+  },
+  header: {
+    flex: 0.3,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+  },
+  avatar: {
+    width: "100%",
+    height: 200,
+    resizeMode:"center",
+    backgroundColor: 'powderblue'
+  },
+  content: {
+    flex: 0.5
+  },
+  cupStyle: {
+    width: 100,
+    height: 100,
+    marginBottom:50
+  },
+  cupWrapper: {
+    flexDirection: "row",
+    justifyContent: "space-around"
+  },
+  submit:{
+    marginRight:5,
+    marginLeft:5,
+    marginBottom:50,
+    backgroundColor:'#3fc9b0',
+    borderRadius:10,
+    borderWidth: 1,
+    borderColor: '#fff',
+    height: 50
+  },
+  submitText:{
+      color:'#fff',
+      textAlign:'center',
+      fontSize: 25,
+      fontWeight: 'bold'
   }
 };
 
