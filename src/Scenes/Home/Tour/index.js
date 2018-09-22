@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 import { View, Text, Image, DeviceEventEmitter, Platform } from "react-native";
 import { Model } from "./model";
 import Images from "../../../Assets/Images";
+
 import Kontakt from "react-native-kontaktio";
 const { connect, startScanning } = Kontakt;
 
@@ -43,7 +44,9 @@ class Container extends Component {
                 this.setState({ lastProximityIndex, cups, level });
                 if (level == 2) {
                   DeviceEventEmitter.removeListener("beaconsDidUpdate");
-                  alert("Tebrikler. Basariyla tamamladin");
+                  setTimeout(() => {
+                    this.props.dispatch(navigate("Final"));
+                  }, 3000);
                 }
               } else if (pIndex < lastProximityIndex) {
                 lastProximityIndex = pIndex;
@@ -83,7 +86,7 @@ class Container extends Component {
           />
         </View>
         <View style={styles.content}>
-          <Text>
+          <Text style={styles.submitText}>
             {this.state.proximityTexts[this.state.lastProximityIndex]}
           </Text>
         </View>
@@ -98,7 +101,8 @@ const styles = {
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
-    marginBottom: 2
+    backgroundColor: "#221b4b",
+    marginTop: 40
   },
   header: {
     flex: 0.3,
@@ -122,12 +126,18 @@ const styles = {
     justifyContent: "space-around"
   },
   cupStyle: {
-    width: 100,
-    height: 100
+    width: 120,
+    height: 120
   },
   cupWrapper: {
     flexDirection: "row",
     justifyContent: "space-around"
+  },
+  submitText: {
+    color: "#fff",
+    textAlign: "center",
+    fontSize: 25,
+    fontWeight: "bold"
   }
 };
 

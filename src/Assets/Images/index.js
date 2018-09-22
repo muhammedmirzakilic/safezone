@@ -8,8 +8,8 @@ const images = {
   superman: require("./superman.jpeg"),
   batman: require("./batman.jpeg"),
   vecihi: require("./vecihi.jpeg"),
-  firstboy: require("./boyfirst.png"),
-  secondboy: require("./boysecond.png"),
+  firstBoy: require("./boyfirst.png"),
+  secondBoy: require("./boysecond.png"),
   trophy: require("./trophy.png"),
   giff: require("./45.gif")
 };

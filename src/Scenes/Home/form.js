@@ -7,6 +7,7 @@ import {
   TextInput,
   Image
 } from "react-native";
+import Images from "../../Assets/Images";
 
 const Container = props => {
   return (
@@ -29,7 +30,6 @@ const Container = props => {
         onChangeText={text => props.updateForm("surnameText", text)}
         value={props.surnameText}
       />
-      <Image source={Images["giff"]} style={styles.gif} />
     </View>
   );
 };
@@ -56,6 +56,15 @@ const styles = StyleSheet.create({
   gif: {
     width: "100%",
     height: 200
+  },
+  submit: {
+    marginRight: 5,
+    marginLeft: 5,
+    backgroundColor: "#3fc9b0",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fff",
+    height: 50
   }
 });
 

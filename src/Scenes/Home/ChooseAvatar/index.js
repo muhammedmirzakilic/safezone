@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { View,Text,TouchableHighlight, Image } from "react-native";
+import { View, Text, TouchableHighlight, Image } from "react-native";
 import { Button } from "react-native-elements";
 import Images from "../../../Assets/Images";
 
@@ -14,45 +14,81 @@ class Container extends Component {
   }
   navigateToIntroWithFirstCharacter = () => {
     this.props.dispatch(navigate("Intro"));
+    this.props.dispatch({
+      type: "SetAvatar",
+      payload: "firstBoy"
+    });
   };
 
   navigateToIntroWithSecondCharacter = () => {
     this.props.dispatch(navigate("Intro"));
+    this.props.dispatch({
+      type: "SetAvatar",
+      payload: "secondBoy"
+    });
   };
   render() {
     return (
-      
-      <View style={{flex:1,flexDirection: 'column',alignItems: "center",justifyContent: "center",backgroundColor : "#221b4b"}}>
-      <Text style={{textAlign: 'center',color:"#F5FCFF",fontSize: 30,fontWeight: 'bold'}}>{this.state.title}</Text>
-        <View style={{flexDirection: "row"}}>
-            <View style={{width: 200, height: 200, backgroundColor: 'powderblue'}}>
-            <TouchableHighlight 
-                style={{
-                borderWidth:1,
-                borderColor:'rgba(0,0,0,0.2)',
-                alignItems:'center',
-                justifyContent:'center',
-                width:200,
-                height:200,
-                backgroundColor:'powderblue'}}
-              onPress={this.navigateToIntroWithFirstCharacter}>
-             <Image style={{width:180,height:180}} source={Images["firstboy"]} />
+      <View
+        style={{
+          flex: 1,
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#221b4b"
+        }}
+      >
+        <Text
+          style={{
+            textAlign: "center",
+            color: "#F5FCFF",
+            fontSize: 30,
+            fontWeight: "bold"
+          }}
+        >
+          {this.state.title}
+        </Text>
+        <View style={{ flexDirection: "row" }}>
+          <View
+            style={{ width: 200, height: 200, backgroundColor: "powderblue" }}
+          >
+            <TouchableHighlight
+              style={{
+                borderWidth: 1,
+                borderColor: "rgba(0,0,0,0.2)",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 200,
+                height: 200,
+                backgroundColor: "powderblue"
+              }}
+              onPress={this.navigateToIntroWithFirstCharacter}
+            >
+              <Image
+                style={{ width: 180, height: 180 }}
+                source={Images["firstBoy"]}
+              />
             </TouchableHighlight>
-            </View>
-            <View style={{width: 200, height: 200, backgroundColor: 'skyblue'}}>
-            <TouchableHighlight 
-            style={{
-            borderWidth:1,
-            borderColor:'rgba(0,0,0,0.2)',
-            alignItems:'center',
-            justifyContent:'center',
-            width:200,
-            height:200,
-            backgroundColor:'skyblue'}}
-            onPress={this.navigateToIntroWithSecondCharacter}>
-            <Image style={{width:180,height:180}} source={Images["secondboy"]} />
+          </View>
+          <View style={{ width: 200, height: 200, backgroundColor: "skyblue" }}>
+            <TouchableHighlight
+              style={{
+                borderWidth: 1,
+                borderColor: "rgba(0,0,0,0.2)",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 200,
+                height: 200,
+                backgroundColor: "skyblue"
+              }}
+              onPress={this.navigateToIntroWithSecondCharacter}
+            >
+              <Image
+                style={{ width: 180, height: 180 }}
+                source={Images["secondBoy"]}
+              />
             </TouchableHighlight>
-            </View> 
+          </View>
         </View>
       </View>
     );

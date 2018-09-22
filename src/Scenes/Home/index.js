@@ -10,24 +10,35 @@ import {
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Button } from "react-native-elements";
-import Images from "../../Assets/Images";
 import Form from "./form";
+import * as Actions from "./actions";
+
 class Container extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   navigateToChooseAvatar = () => {
+    this.props.getReservationData(this.state.pnrText, this.state.surnameText);
     this.props.dispatch(navigate("ChooseAvatar"));
   };
   updateForm = (key, value) => {
     this.setState({ [key]: value });
   };
+
+  getReservationInfo = () => {
+    this.props.getReservationData(this.state.pnrText, this.state.surnameText);
+  };
+
   render() {
     return (
       <View style={{ flex: 1, backgroundColor: "#221b4b" }}>
         <View style={{ flex: 0.8, marginTop: 50 }}>
-          <Form {...this.state} updateForm={this.updateForm} />
+          <Form
+            {...this.state}
+            updateForm={this.updateForm}
+            submitForm={this.getReservationInfo}
+          />
         </View>
 
         <View style={{ flex: 0.2, justifyContent: "flex-end" }}>
@@ -90,7 +101,7 @@ const mapStateToProps = state => {
 };
 
 function mapDispatchToProps(dispatch) {
-  return { ...bindActionCreators({}, dispatch), dispatch };
+  return { ...bindActionCreators(Actions, dispatch), dispatch };
 }
 
 export default connect(
