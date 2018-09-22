@@ -12,6 +12,11 @@ class Container extends Component {
       title: "Intro sayfasi"
     };
   }
+
+  startTour = () => {
+    this.props.dispatch(navigate("Tour"));
+  };
+
   render() {
     return (
       <Swiper>
@@ -27,6 +32,7 @@ class Container extends Component {
             large
             rightIcon={{ name: "code" }}
             title="Hade oyuna baslayam o vakit"
+            onPress={this.startTour}
           />
         </View>
       </Swiper>

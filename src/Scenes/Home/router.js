@@ -2,6 +2,8 @@ import { StackNavigator } from "react-navigation";
 import HomeBase from "./index";
 import ChooseAvatarScreen from "./ChooseAvatar";
 import IntroScreen from "./Intro";
+import TourScreen from "./Tour";
+
 export const HomeNavigator = StackNavigator(
   {
     Home: {
@@ -12,6 +14,9 @@ export const HomeNavigator = StackNavigator(
     },
     Intro: {
       screen: IntroScreen
+    },
+    Tour: {
+      screen: TourScreen
     }
   },
   {
