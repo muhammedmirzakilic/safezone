@@ -10,10 +10,10 @@ class Container extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstPageIntro: "sayfa 1111",
+      firstPageIntro: "Merhaba, Ben Kemal.Benimle eğlence dolu bir yolculuğa hoşgeldin"+"😊",
       secondPageIntro: "sayfa 22222",
       thirdPageIntro: "sayfa 333333",
-      trophy = ["tall","grande","venti"]
+      trophy: ["tall","grande","venti"]
     };
   }
 
@@ -37,13 +37,13 @@ class Container extends Component {
 
   render() {
     return (
-      <Swiper>
+      <Swiper loop={false} dotColor={"#fff"} activeDotColor={"#3fc9b0"}>
         <View style={styles.slider1}>
             <View style={styles.header}>
               <Image source={Images["firstboy"]} style={styles.avatar} />
             </View>
             <View style={styles.content}>
-              <Text>{this.state.firstPageIntro}</Text>
+              <Text style={styles.submitText}>{this.state.firstPageIntro}</Text>
             </View>
         </View>
         <View style={styles.slider2}>
@@ -87,37 +87,41 @@ const styles = {
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
-    marginBottom: 2
+    marginTop:40,
+    backgroundColor: "#221b4b"
   },
 
   slider2: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
-    marginBottom: 2
+    backgroundColor: "#221b4b"
   },
 
   slider3: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
-    marginBottom: 2
+    backgroundColor: "#221b4b"
   },
   header: {
     flex: 0.3,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   avatar: {
     width: "100%",
-    height: 200
+    height: 200,
+    resizeMode:"center",
+    backgroundColor: 'powderblue'
   },
   content: {
     flex: 0.5
   },
   cupStyle: {
     width: 100,
-    height: 100
+    height: 100,
+    marginBottom:50
   },
   cupWrapper: {
     flexDirection: "row",
@@ -126,6 +130,7 @@ const styles = {
   submit:{
     marginRight:5,
     marginLeft:5,
+    marginBottom:50,
     backgroundColor:'#3fc9b0',
     borderRadius:10,
     borderWidth: 1,

@@ -10,7 +10,8 @@ const images = {
   vecihi: require("./vecihi.jpeg"),
   firstboy: require("./boyfirst.png"),
   secondboy: require("./boysecond.png"),
-  trophy: require("./trophy.png")
+  trophy: require("./trophy.png"),
+  giff: require("./45.gif")
 };
 
 export default images;

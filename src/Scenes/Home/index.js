@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { View, Text, TouchableHighlight,StyleSheet,TextInput } from "react-native";
+import { View, Text, TouchableHighlight,StyleSheet,TextInput,Image } from "react-native";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Button } from "react-native-elements";
+import Images from "../../Assets/Images";
 
 class Container extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class Container extends Component {
           style={styles.TextInputStyleClass}
           onChangeText={(text) => this.setState({surnameText:text})}
           value={this.state.surnameText}/>
+      <Image source={Images["giff"]} style={styles.gif} />
       </View>
 
       <View style={{flex:0.2,justifyContent: 'flex-end'}}>
@@ -82,7 +84,11 @@ const styles = StyleSheet.create({
       textAlign:'center',
       fontSize: 25,
       fontWeight: 'bold'
-  }
+  },
+  gif: {
+    width: "100%",
+    height: 200
+  },
    
   });
 
