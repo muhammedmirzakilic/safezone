@@ -12,51 +12,47 @@ class Container extends Component {
     super(props);
     this.state = new Model(props);
   }
+  componentDidMount() {
+    setTimeout(() => {
+      var { cups } = this.state;
+      cups[0].isActive = true;
+      this.setState({ cups });
+    }, 3000);
+    setTimeout(() => {
+      var { cups } = this.state;
+      cups[1].isActive = true;
+      this.setState({ cups });
+    }, 7000);
+    setTimeout(() => {
+      var { cups } = this.state;
+      cups[2].isActive = true;
+      this.setState({ cups });
+    }, 10000);
+  }
+
+  renderCups = () => {
+    var images = [];
+    this.state.cups.map(element => {
+      images.push(
+        <Image
+          style={styles.cupStyle}
+          source={Images[element.name + (element.isActive ? "" : "Passive")]}
+        />
+      );
+    });
+    return <View style={styles.cupWrapper}>{images}</View>;
+  };
 
   render() {
     return (
       <View style={styles.container}>
-        <Image style={styles.cupStyle} source={Images["tall"]} />
-        {/* <View style={styles.header}>
-          <Image />
+        <View style={styles.header}>
+          <Image source={Images[this.state.avatar]} style={styles.avatar} />
         </View>
         <View style={styles.content}>
           <Text>{this.state.stateText}</Text>
         </View>
-        <Text>{this.state.title}</Text>
-        <Button raised title="Introya ilerle" onPress={this.navigateToIntro} /> */}
-        <View>
-          <Image
-            style={styles.cupStyle}
-            source={
-              Images[
-                this.state.cups[0].name + this.state.cups[0].isActive
-                  ? ""
-                  : "Passive"
-              ]
-            }
-          />
-          <Image
-            style={styles.cupStyle}
-            source={
-              Images[
-                this.state.cups[1].name + this.state.cups[1].isActive
-                  ? ""
-                  : "Passive"
-              ]
-            }
-          />
-          <Image
-            style={styles.cupStyle}
-            source={
-              Images[
-                this.state.cups[2].name + this.state.cups[2].isActive
-                  ? ""
-                  : "Passive"
-              ]
-            }
-          />
-        </View>
+        {this.renderCups()}
       </View>
     );
   }
@@ -66,10 +62,17 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    marginBottom: 2
   },
   header: {
-    flex: 0.3
+    flex: 0.3,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  avatar: {
+    width: "100%",
+    height: 200
   },
   footer: {
     position: "absolute",
@@ -84,8 +87,12 @@ const styles = {
     justifyContent: "space-around"
   },
   cupStyle: {
-    width: 50,
-    height: 50
+    width: 100,
+    height: 100
+  },
+  cupWrapper: {
+    flexDirection: "row",
+    justifyContent: "space-around"
   }
 };
 

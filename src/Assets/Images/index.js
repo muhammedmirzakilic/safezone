@@ -4,7 +4,10 @@ const images = {
   grande: require("./grande.png"),
   grandePassive: require("./grande-gray.png"),
   tall: require("./tall.png"),
-  tallPassive: require("./tall-gray.png")
+  tallPassive: require("./tall-gray.png"),
+  superman: require("./superman.jpeg"),
+  batman: require("./batman.jpeg"),
+  vecihi: require("./vecihi.jpeg")
 };
 
 export default images;

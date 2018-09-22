@@ -12,7 +12,15 @@ class AppContainer extends Component {
   render() {
     return (
       <Provider store={store}>
-        <NavigationContainer />
+        <View style={{ flex: 1, backgroundColor: "#221b4b" }}>
+          <StatusBar
+            translucent
+            backgroundColor="#221b4b"
+            animated
+            //barStyle="dark-content"
+          />
+          <NavigationContainer />
+        </View>
       </Provider>
     );
   }

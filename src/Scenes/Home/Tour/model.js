@@ -15,7 +15,7 @@ export const Model = props => {
         isActive: false
       }
     ],
-    avatar: "",
+    avatar: "superman",
     stateText: "Hayde baslayalim"
   };
 };
