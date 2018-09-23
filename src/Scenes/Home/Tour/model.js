@@ -19,9 +19,9 @@ export const Model = props => {
     avatars: ["superman", "batman", "vecihi"],
     stateText: "Hadi başlayalım",
     uuids: [
-      "FDA50693-A4E2-4FB1-AFCF-C6EB07647825",
-      "FDA50693-A4E2-4FB1-AFCF-C6EB07647825",
-      "f7826da6-4fa2-4e98-8024-bc5b71e0893e"
+      "BE6E45F7-E8DB-4EDA-99D6-56AAAFDD0FC2",
+      "E82B67CC-F5F4-4976-AA95-05C705909D57",
+      "FDA50693-A4E2-4FB1-AFCF-C6EB07647825"
     ],
     proximities: ["IMMEDIATE", "NEAR","FAR" ],
     lastProximityIndex: 3,

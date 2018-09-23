@@ -41,7 +41,7 @@ class Container extends Component {
                 cups[level].isActive = true;
                 level++;
                 this.setState({ lastProximityIndex, cups, level });
-                if (level == 2) {
+                if (level == 3) {
                   DeviceEventEmitter.removeListener("beaconsDidUpdate");
                   setTimeout(()=>{
                     this.props.dispatch(navigate("Final"));
