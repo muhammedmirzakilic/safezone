@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import Images from "../../../Assets/Images";
 import * as Actions from "./actions";
+
 class Container extends Component {
   constructor(props) {
     super(props);
