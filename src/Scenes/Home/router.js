@@ -4,7 +4,7 @@ import ChooseAvatarScreen from "./ChooseAvatar";
 import IntroScreen from "./Intro";
 import TourScreen from "./Tour";
 import FinalScreen from "./Final";
-import SplashScreen from "./Splash"
+import SplashScreen from "./Splash";
 
 export const HomeNavigator = StackNavigator(
   {
@@ -20,10 +20,10 @@ export const HomeNavigator = StackNavigator(
     Tour: {
       screen: TourScreen
     },
-    Final:{
+    Final: {
       screen: FinalScreen
     },
-    Splash:{
+    Splash: {
       screen: SplashScreen
     }
   },

@@ -1,4 +1,4 @@
-#Sat Sep 22 20:53:52 EET 2018
-base.0=C\:\\Users\\ethem\\Desktop\\Git\\safezone\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+#Fri Sep 21 21:35:48 EET 2018
+base.0=/Users/muhammedmirzakilic/Desktop/safezone/android/app/build/intermediates/transforms/dexMerger/debug/9
 path.0=classes.dex
 renamed.0=classes.dex

@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 import { View, Text, Image, DeviceEventEmitter, Platform } from "react-native";
 import { Model } from "./model";
 import Images from "../../../Assets/Images";
+
 import Kontakt from "react-native-kontaktio";
 const { connect, startScanning } = Kontakt;
 
@@ -43,9 +44,9 @@ class Container extends Component {
                 this.setState({ lastProximityIndex, cups, level });
                 if (level == 3) {
                   DeviceEventEmitter.removeListener("beaconsDidUpdate");
-                  setTimeout(()=>{
+                  setTimeout(() => {
                     this.props.dispatch(navigate("Final"));
-                  },3000)
+                  }, 3000);
                 }
               } else if (pIndex < lastProximityIndex) {
                 lastProximityIndex = pIndex;
@@ -101,7 +102,7 @@ const styles = {
     flexDirection: "column",
     justifyContent: "space-between",
     backgroundColor: "#221b4b",
-    marginTop:40
+    marginTop: 40
   },
   header: {
     flex: 0.3,
@@ -132,12 +133,12 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-around"
   },
-  submitText:{
-    color:'#fff',
-    textAlign:'center',
+  submitText: {
+    color: "#fff",
+    textAlign: "center",
     fontSize: 25,
-    fontWeight: 'bold'
-}
+    fontWeight: "bold"
+  }
 };
 
 const mapStateToProps = state => {

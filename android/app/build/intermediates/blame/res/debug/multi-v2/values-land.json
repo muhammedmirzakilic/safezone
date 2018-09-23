@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ethem\\Desktop\\Git\\safezone\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/muhammedmirzakilic/Desktop/safezone/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ethem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\38be214fbdeaf3eac96522cbbb560f33\\res\\values-land\\values-land.xml",
+                    "source": "/Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

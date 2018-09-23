@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ethem\\Desktop\\Git\\safezone\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "/Users/muhammedmirzakilic/Desktop/safezone/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ethem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\38be214fbdeaf3eac96522cbbb560f33\\res\\values-ca\\values-ca.xml",
+                    "source": "/Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ethem\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\c5dcc0bc1301a64062f9d2d6c4170465\\res\\values-ca\\values-ca.xml",
+                    "source": "/Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa75d1ecb0babe2952ed5ce3ce2ab8c2/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

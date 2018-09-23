@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ethem\\Desktop\\Git\\safezone\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
+            "outputFile": "/Users/muhammedmirzakilic/Desktop/safezone/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ethem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\38be214fbdeaf3eac96522cbbb560f33\\res\\values-tr\\values-tr.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,309,421,506,612,732,811,887,966,1073,1178,1274,1381,1483,1591,1747,1845",
-                        "endColumns": "104,98,111,84,105,119,78,75,78,106,104,95,106,101,107,155,97,78",
-                        "endOffsets": "205,304,416,501,607,727,806,882,961,1068,1173,1269,1376,1478,1586,1742,1840,1919"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ethem\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\c5dcc0bc1301a64062f9d2d6c4170465\\res\\values-tr\\values-tr.xml",
+                    "source": "/Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa75d1ecb0babe2952ed5ce3ce2ab8c2/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1924",
                         "endColumns": "100",
                         "endOffsets": "2020"
+                    }
+                },
+                {
+                    "source": "/Users/muhammedmirzakilic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5a3e0553015e3c0e83293dc340a757ea/res/values-tr/values-tr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,309,421,506,612,732,811,887,966,1073,1178,1274,1381,1483,1591,1747,1845",
+                        "endColumns": "104,98,111,84,105,119,78,75,78,106,104,95,106,101,107,155,97,78",
+                        "endOffsets": "205,304,416,501,607,727,806,882,961,1068,1173,1269,1376,1478,1586,1742,1840,1919"
                     }
                 }
             ]
