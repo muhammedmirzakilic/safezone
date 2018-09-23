@@ -28,7 +28,7 @@ export function getReservationData(pnr, lastName) {
           type: "SetPassengerName",
           payload: passengerName
         });
-        alert("Hos geldin " + passengerName);
+        //alert("Hos geldin " + passengerName);
       } catch (error) {}
     }
   };

@@ -14,6 +14,7 @@ class Container extends Component {
     this.state = new Model(props);
   }
   componentDidMount() {
+    /*
     if (Platform.OS != "ios") {
       connect()
         .then(() => startScanning())
@@ -60,6 +61,42 @@ class Container extends Component {
         }
       );
     }
+    */
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      var prevPIndex = this.state.lastProximityIndex;
+      var prevLevel = this.state.level;
+      prevPIndex--;
+      if (prevPIndex == -1) {
+        prevLevel++;
+      }
+      if (prevLevel == 3) {
+        this.props.dispatch(navigate("Final"));
+      } else
+        this.setState({ lastProximityIndex: prevPIndex, level: prevLevel });
+    }, 1000);
+  }
+  componentDidUpdate(prevProps, prevState) {
+    setTimeout(() => {
+      var prevPIndex = prevState.lastProximityIndex;
+      var prevLevel = prevState.level;
+      prevPIndex--;
+      var cups = prevState.cups;
+      if (prevPIndex == -1) {
+        cups[prevLevel].isActive = true;
+        prevLevel++;
+        prevPIndex = 3;
+      }
+      if (prevLevel == 3) {
+        this.props.dispatch(navigate("Final"));
+      } else
+        this.setState({
+          lastProximityIndex: prevPIndex,
+          level: prevLevel,
+          cups
+        });
+    }, 1000);
   }
 
   renderCups = () => {
