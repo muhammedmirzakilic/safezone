@@ -1,2 +1,2 @@
 # safezone
-Init
+Thy Hackathon 2018 Project
