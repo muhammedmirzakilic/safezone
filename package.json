@@ -12,7 +12,7 @@
     "buffer": "^5.2.1",
     "immutable": "^3.8.2",
     "react": "16.5.0",
-    "react-native": "0.57.0",
+    "react-native": "0.70.2",
     "react-native-beacons-manager": "^1.0.7",
     "react-native-elements": "^0.19.1",
     "react-native-kontaktio": "^2.1.0",
